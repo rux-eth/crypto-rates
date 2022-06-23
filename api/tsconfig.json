@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "strict": false,
+    "target": "ES2018",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noUncheckedIndexedAccess": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "strict": true,
+  "exclude": [
+      "node_modules",
+      "config",
+      "test",
+      "coverage",
+      "utils"
+    ]
+}
