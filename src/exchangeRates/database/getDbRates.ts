@@ -5,9 +5,7 @@ import { BasePair, TimestampTuple } from '../types';
 export async function getDbRates(pair: BasePair, c: MongoClient): Promise<List<TimestampTuple>> {
     const db: Db = c.db('exchange-rates');
     const coll: Collection = db.collection(pair.chain);
-    if (pair.baseCurrency === 'gbp') {
-        console.log(pair);
-    }
+
     const doc = await coll.findOne({
         address: pair?.address ?? pair.chain,
         baseCurrency: pair.baseCurrency,

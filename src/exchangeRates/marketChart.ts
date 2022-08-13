@@ -18,9 +18,6 @@ export async function marketChart(
     times: List<TimestampTuple>,
     key?: string
 ): Promise<List<TimestampTuple>> {
-    if (pair.baseCurrency.toLowerCase() === 'gbp') {
-        console.log(pair);
-    }
     const baseUrl: string = pair?.address
         ? `${coinGeckoBaseUrl}coins/${iChainMapping.get(pair.chain)!.platform}/contract/${
               pair.address
