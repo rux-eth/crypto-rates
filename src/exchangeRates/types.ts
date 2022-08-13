@@ -46,6 +46,13 @@ export interface TickerDoc {
  * Endpoint: https://rux-crypto-rates.herokuapp.com/rates
  * HTTP Method: POST
  *
+ * Request body:
+ *
+ * @param ratesQuery = Array<RateQuery>
+ * @param key = string                  CoinGecko API keys currently not supported
+ *
+ * @type RateQuery
+ *
  * id: number                           can be anything, as long as they dont repeat
  * timestamp: Array<number>             must be in milliseconds since UNIX epoch
  * chain: Chain
@@ -68,4 +75,9 @@ export interface TickerDoc {
  * address is preferable, as the program will try to resolve symbols but it is
  * not guaranteed and queries could come back empty
  *
+ *
+ * Responds with an array of objects with these values:
+ *
+ * query: RateQuery                     the original query with matching id
+ * rates: Array<{ rate}>
  */
