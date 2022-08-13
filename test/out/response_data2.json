@@ -1,1 +1,1216 @@
-"hi"
+[
+   {
+      "query": {
+         "id": 16,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1570746314000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1570746314000,
+            "rate": 8543.565464256626
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 18,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1571037194000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1571037194000,
+            "rate": 8320.057493530956
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 19,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1574255876000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1574255876000,
+            "rate": 8071.163899111318
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 24,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1579001159000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1579001159000,
+            "rate": 8493.644462411032
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 29,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1581566944000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1581566944000,
+            "rate": 10362.001461520736
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 36,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1582545373000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1582545373000,
+            "rate": 9789.67785845118
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 39,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1582674884000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1582674884000,
+            "rate": 9345.342701734848
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 40,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1583207229000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1583207229000,
+            "rate": 8878.456840641169
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 52,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1586165765000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1586165765000,
+            "rate": 7079.95645835989
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 65,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1587773426000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1587773426000,
+            "rate": 7495.393587498606
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 72,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1588037485000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1588037485000,
+            "rate": 194.89671522280855
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 73,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1588037496000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1588037496000,
+            "rate": 7740.754152080878
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 80,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1591067868000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1591067868000,
+            "rate": 10058.378575291677
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 81,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1591068244000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1591068244000,
+            "rate": 10058.378575291677
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 90,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1591845427000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1591845427000,
+            "rate": 248.97849536201906
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 91,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1591845440000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1591845440000,
+            "rate": 9907.504461981744
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 92,
+         "symbol": "link",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1591845466000
+         ],
+         "chain": "ethereum",
+         "address": "0x514910771af9ca656af840dff83e8264ecf986ca"
+      },
+      "rates": [
+         {
+            "timestamp": 1591845466000,
+            "rate": 4.4349487654444815
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 97,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1592436975000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1592436975000,
+            "rate": 9463.361414311787
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 98,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1592437004000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1592437004000,
+            "rate": 233.8636184621818
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 99,
+         "symbol": "link",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1592437027000
+         ],
+         "chain": "ethereum",
+         "address": "0x514910771af9ca656af840dff83e8264ecf986ca"
+      },
+      "rates": [
+         {
+            "timestamp": 1592437027000,
+            "rate": 4.16533166227129
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 101,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1592438669000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1592438669000,
+            "rate": 9463.361414311787
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 102,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1592439794000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1592439794000,
+            "rate": 9463.361414311787
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 132,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1594692745000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1594692745000,
+            "rate": 9230.862238140702
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 136,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1594878780000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1594878780000,
+            "rate": 9197.113791683558
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 143,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1594957897000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1594957897000,
+            "rate": 9111.855283133054
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 144,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1594958273000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1594958273000,
+            "rate": 9111.855283133054
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 145,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1594958650000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1594958650000,
+            "rate": 9111.855283133054
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 173,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1596247536000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1596247536000,
+            "rate": 345.4721245459339
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 174,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1596247820000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1596247820000,
+            "rate": 11274.648908670466
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 175,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1596501396000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1596501396000,
+            "rate": 11252.174784601933
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 181,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1600819370000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1600819370000,
+            "rate": 343.9175471009491
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 182,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1600819492000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1600819492000,
+            "rate": 10527.58784673943
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 189,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1602415975000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1602415975000,
+            "rate": -1
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 190,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1602665075000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1602665075000,
+            "rate": 11432.61540898717
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 193,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1603043466000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1603043466000,
+            "rate": 11462.255727927559
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 196,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1603493653000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1603493653000,
+            "rate": 12943.004567753125
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 199,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1604302308000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1604302308000,
+            "rate": 13700.140185578384
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 200,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1604305985000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1604305985000,
+            "rate": 13712.51461992303
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 203,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1608414271000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1608414271000,
+            "rate": -1
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 206,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1608432305000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1608432305000,
+            "rate": -1
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 209,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1608700582000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1608700582000,
+            "rate": 23491.515352924256
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 212,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1608757094000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1608757094000,
+            "rate": 609.909597349616
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 214,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1608758756000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1608758756000,
+            "rate": 23587.86587421435
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 217,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1608856436000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1608856436000,
+            "rate": 610.182074016895
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 222,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1610693712000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1610693712000,
+            "rate": 37847.030095983806
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 223,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1610783389000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1610783389000,
+            "rate": 36862.69895237206
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 224,
+         "symbol": "btc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1610881362000
+         ],
+         "chain": "bitcoin"
+      },
+      "rates": [
+         {
+            "timestamp": 1610881362000,
+            "rate": 34880.368638792286
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 235,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1612345851000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1612345851000,
+            "rate": 1532.9310560880006
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 236,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1612386888000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1612386888000,
+            "rate": 1633.5959278186544
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 237,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1613379212000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1613379212000,
+            "rate": 1761.7552192696605
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 242,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1615434333000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1615434333000,
+            "rate": 1800.1942875911527
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 251,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1618257461000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1618257461000,
+            "rate": 2140.849821527155
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 253,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1618886645000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1618886645000,
+            "rate": -1
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 262,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1623695375000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1623695375000,
+            "rate": 2580.6367218906053
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 265,
+         "symbol": "gusd",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1624325336000
+         ],
+         "chain": "ethereum",
+         "address": "0x056fd409e1d7a124bd7017459dfea2f387b6d5cd"
+      },
+      "rates": [
+         {
+            "timestamp": 1624325336000,
+            "rate": 1.0027164830287385
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 266,
+         "symbol": "gusd",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1625283265000
+         ],
+         "chain": "ethereum",
+         "address": "0x056fd409e1d7a124bd7017459dfea2f387b6d5cd"
+      },
+      "rates": [
+         {
+            "timestamp": 1625283265000,
+            "rate": 1.0015685339997613
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 273,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1628157197000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1628157197000,
+            "rate": 2584.4828393000817
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 277,
+         "symbol": "gusd",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1629769967000
+         ],
+         "chain": "ethereum",
+         "address": "0x056fd409e1d7a124bd7017459dfea2f387b6d5cd"
+      },
+      "rates": [
+         {
+            "timestamp": 1629769967000,
+            "rate": 0.9942186813812008
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 278,
+         "symbol": "gusd",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1629790830000
+         ],
+         "chain": "ethereum",
+         "address": "0x056fd409e1d7a124bd7017459dfea2f387b6d5cd"
+      },
+      "rates": [
+         {
+            "timestamp": 1629790830000,
+            "rate": 0.9971703750323562
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 281,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1629810691000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1629810691000,
+            "rate": 3307.6565341473383
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 283,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1629932563000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1629932563000,
+            "rate": 3216.4503179588296
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 287,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1632895252000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1632895252000,
+            "rate": 2921.8719650758126
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 288,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1634339534000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1634339534000,
+            "rate": 3865.177147990066
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 296,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1635455843000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1635455843000,
+            "rate": 4265.9364016507625
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 297,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1636431131000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1636431131000,
+            "rate": 4828.938362733541
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 300,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1639202906000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1639202906000,
+            "rate": 4036.355033503605
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 303,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1639922310000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1639922310000,
+            "rate": 3932.726710210977
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 306,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1641285292000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1641285292000,
+            "rate": -1
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 309,
+         "symbol": "usdc",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1641733752000
+         ],
+         "chain": "ethereum",
+         "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "rates": [
+         {
+            "timestamp": 1641733752000,
+            "rate": 1.0008914540825418
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 314,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1641941318000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1641941318000,
+            "rate": 3244.0131120018027
+         }
+      ]
+   },
+   {
+      "query": {
+         "id": 316,
+         "symbol": "eth",
+         "baseCurrency": "usd",
+         "timestamp": [
+            1642014956000
+         ],
+         "chain": "ethereum"
+      },
+      "rates": [
+         {
+            "timestamp": 1642014956000,
+            "rate": 3369.3650034022626
+         }
+      ]
+   }
+]

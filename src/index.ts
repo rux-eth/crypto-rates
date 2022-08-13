@@ -1,5 +1,4 @@
-import router from './app';
-
+/* eslint-disable prettier/prettier */
 export * from './exchangeRates';
 export * from './types';
-export default router;
+
