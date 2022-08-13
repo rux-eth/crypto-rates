@@ -12,8 +12,8 @@ export function findRate(
 ): IRate {
     const quickSearch = (target: Timestamp): number => {
         const index: number = haystack.findIndex((val: TimestampTuple) => {
-            const min = val[0] - hr2ms(1);
-            const max = val[0] + hr2ms(1);
+            const min = val[0] - hr2ms(0.5);
+            const max = val[0] + hr2ms(0.5);
             const ts = target;
             return ts >= min && ts <= max;
         });

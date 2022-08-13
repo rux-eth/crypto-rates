@@ -19,7 +19,7 @@ describe('findRate', () => {
     });
     describe('IOOB', () => {
         it('High', () => {
-            const target: Timestamp = max[0] + hr2ms(0.5) + 2;
+            const target: Timestamp = max[0] + hr2ms(0.5) + 1;
             const exp: [Timestamp, number] = [target, -1];
             const rate: [Timestamp, number] = findRate(List([target]), testTuples).toArray()[0];
             expect(rate).toStrictEqual(exp);
