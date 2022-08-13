@@ -10,7 +10,7 @@ const http = rateLimiter(
         method: 'get',
         validateStatus: (status) => status === 200 || status === 404,
     }),
-    { maxRequests: 50, perMilliseconds: 65000 }
+    { maxRequests: 40, perMilliseconds: 60000 }
 );
 let counter = 0;
 export async function marketChart(
