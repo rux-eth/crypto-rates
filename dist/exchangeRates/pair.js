@@ -3,15 +3,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.initializePairs = void 0;
+exports.Pair = exports.initializePairs = void 0;
 const immutable_1 = require("immutable");
-const marketChart_1 = require("./coingecko/marketChart");
 const database_1 = __importDefault(require("./database"));
+const marketChart_1 = require("./marketChart");
 const dataHelpers_1 = require("./util/dataHelpers");
 const typeAssertions_1 = require("./util/typeAssertions");
 class Pair {
     constructor(p, k) {
-        this.timestamps = (0, immutable_1.List)([]);
+        this.timestamp = (0, immutable_1.List)([]);
         this.rates = (0, immutable_1.Map)();
         this.basePair = p;
         this.chain = p.chain;
@@ -21,28 +21,37 @@ class Pair {
     }
     async fetchRates() {
         await this.fetchDbRates();
-        await this.fetchCgRates();
+        if (this.rates.count() !== this.timestamp.count())
+            await this.fetchCgRates();
+        /*         this.rates.forEach((v, k) => {
+            console.log(v);
+            console.log(k);
+        }); */
+        return this;
     }
     async fetchDbRates() {
-        this.rates = (0, dataHelpers_1.findRate)(this.timestamps, await (0, database_1.default)().getDbRates(this.basePair));
+        this.rates = (0, dataHelpers_1.findRate)(this.timestamp, await (0, database_1.default)().getDbRates(this.basePair)).filter((val) => val > 0);
     }
     async fetchCgRates() {
-        const left = (0, immutable_1.List)(this.rates.keySeq().filter((val) => this.rates.get(val, -1) === -1));
+        const left = this.timestamp.filterNot((ts) => this.rates.has(ts));
         const formatted = (0, dataHelpers_1.formatTimestamps)(left);
         const tuples = await (0, marketChart_1.marketChart)(this.basePair, formatted, this.key);
-        const newRates = (0, dataHelpers_1.findRate)(left, tuples);
-        this.rates = this.rates.mapEntries(([ts, r]) => [ts, r === -1 ? newRates.get(ts, -1) : r]);
+        const newRates = (0, dataHelpers_1.findRate)(left, tuples).filter((val) => val > 0);
+        this.rates = this.rates.merge(newRates);
+        if (tuples.count() > 0) {
+            (0, database_1.default)().updateRates(this.basePair, tuples);
+        }
     }
     addTimestamps(ts) {
-        this.timestamps.concat(...ts);
+        this.timestamp = this.timestamp.concat(...ts);
     }
     getRate(ts) {
         return this.rates.get(ts, -1);
     }
 }
-exports.default = Pair;
+exports.Pair = Pair;
 async function initializePairs(q) {
-    let pair2id = (0, immutable_1.Map)();
+    let pair2id = (0, immutable_1.List)([]);
     let ipair2pair = (0, immutable_1.Map)();
     let ids = [];
     await Promise.all(q.map(async (val) => {
@@ -55,11 +64,11 @@ async function initializePairs(q) {
                 throw { status: 400, message: `Repeating Request ID: ${rq.id}` };
             const basePair = (0, dataHelpers_1.toBasePair)(rq);
             const pair = ipair2pair.get((0, immutable_1.Map)(basePair), new Pair(basePair));
-            pair.addTimestamps(rq.timestamps);
-            pair2id = pair2id.set(pair, rq.id);
+            pair.addTimestamps(rq.timestamp);
+            pair2id = pair2id.push([rq.id, pair]);
             ipair2pair = ipair2pair.set((0, immutable_1.Map)(basePair), pair);
         }
     }));
-    return pair2id.flip();
+    return (0, immutable_1.Map)(pair2id);
 }
 exports.initializePairs = initializePairs;

@@ -1,27 +1,8 @@
 "use strict";
-/* import getStartStamp from "./coingecko/commands/startStamp";
-import getMarketCharts from "./coingecko/getCoinGeckoRates";
-import {
-  MarketChartData,
-  NotFoundResponse,
-  Timestamp
-} from "./coingecko/types";
-import { Coin, Rates } from "./types";
-export default function exchangeRates(key?: string) {
-  const rates: Rates = {
-    getMarketCharts(
-      coins: Coin[],
-      baseCurrency: string,
-      initQueue?: number
-    ): Promise<Array<MarketChartData | NotFoundResponse>> {
-      return getMarketCharts(coins, baseCurrency, key);
-    },
-    getStartStamp(
-      coin: Coin
-    ): Promise<Timestamp> {
-      return getStartStamp(coin);
-    },
-  };
-  return rates;
-}
- */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getExchangeRates = exports.Pair = exports.initializePairs = void 0;
+const getExchangeRates_1 = require("./getExchangeRates");
+Object.defineProperty(exports, "getExchangeRates", { enumerable: true, get: function () { return getExchangeRates_1.getExchangeRates; } });
+const pair_1 = require("./pair");
+Object.defineProperty(exports, "initializePairs", { enumerable: true, get: function () { return pair_1.initializePairs; } });
+Object.defineProperty(exports, "Pair", { enumerable: true, get: function () { return pair_1.Pair; } });

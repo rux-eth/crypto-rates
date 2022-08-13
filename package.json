@@ -4,7 +4,7 @@
   "private": true,
   "main": "./dist/app.js",
   "scripts": {
-    "start": "ts-node src/app.ts",
+    "start": "tsc && node ./dist/app.js",
     "test": "jest --passWithNoTests",
     "dev": "nodemon --watch src src/app.ts",
     "sandbox": "ts-node test/sandbox.ts"

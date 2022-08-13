@@ -13,11 +13,11 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TxType = void 0;
-__exportStar(require("./exchangeRates/types"), exports);
-var TxType;
-(function (TxType) {
-    TxType[TxType["TRANSFER"] = 0] = "TRANSFER";
-    TxType[TxType["CLAIM"] = 1] = "CLAIM";
-})(TxType = exports.TxType || (exports.TxType = {}));
+const app_1 = __importDefault(require("./app"));
+__exportStar(require("./exchangeRates"), exports);
+__exportStar(require("./types"), exports);
+exports.default = app_1.default;

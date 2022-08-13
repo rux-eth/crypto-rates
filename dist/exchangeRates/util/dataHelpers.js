@@ -6,7 +6,7 @@ function hr2ms(hrs) {
     return hrs * (3.6 * Math.pow(10, 6));
 }
 exports.hr2ms = hr2ms;
-function findRate(needle, haystack) {
+function findRate(n, h, needle = n.sort((a, b) => a - b), haystack = h.sort((a, b) => a[0] - b[0])) {
     const quickSearch = (target) => {
         const index = haystack.findIndex((val) => {
             const min = val[0] - hr2ms(0.5);
@@ -25,18 +25,17 @@ function findRate(needle, haystack) {
     return temp;
 }
 exports.findRate = findRate;
-function formatTimestamps(ts) {
-    if (ts.count() < 2)
-        return (0, immutable_1.List)([
-            [
-                ts.get(0, -hr2ms(45 * 24)) - hr2ms(45 * 24),
-                ts.get(0, -hr2ms(45 * 24)) + hr2ms(45 * 24),
-            ],
-        ]);
+function formatTimestamps(t, ts = t.sort((a, b) => a - b)) {
+    if (ts.count() === 0)
+        throw { status: 400, message: 'No Timestamps Provided' };
     const formatTuple = (start, end) => {
         const halves = (hr2ms(90 * 24) - (end - start)) >>> 1;
-        return [start - halves, end + halves];
+        const ss = start - halves;
+        const es = end + halves;
+        return [ss > 0 ? ss : 0, es > 0 ? es : 0];
     };
+    if (ts.count() === 1)
+        return (0, immutable_1.List)([formatTuple(ts.get(0), ts.get(0))]);
     let last = ts.get(0);
     let all = [];
     for (let i = 0; i < ts.count() - 1; i++) {

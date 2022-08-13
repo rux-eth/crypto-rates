@@ -27,36 +27,24 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const body_parser_1 = __importDefault(require("body-parser"));
-const dotenv = __importStar(require("dotenv"));
 const express = __importStar(require("express"));
-const queue_1 = require("../exchangeRates/coingecko/queue");
-const getExchangeRates_1 = __importDefault(require("../exchangeRates/getExchangeRates"));
-//import { Coin, MarketChartData, NotFoundResponse } from '../exchangeRates/src/types';
+// import { getExchangeRates } from '../exchangeRates';
+// import { RateResponse } from '../exchangeRates/types';
 const asyncHandler_1 = __importDefault(require("../util/asyncHandler"));
-dotenv.config();
 const jsonParser = body_parser_1.default.json();
 const router = express.Router();
-/* router.post('/taxes', jsonParser, (req, res, next) => {
-    const taxesReq = req.body;
-    assertTaxesQuery(taxesReq);
-    const report = createReport({
-        config: {
-            local_currency: 'USD',
-            price_method: 'BASE',
-            cost_basis_method: 'FIFO',
-            decimal_places: 2,
-            allow_lot_overlap: true,
-        },
-        transactions: taxesReq.transactions,
-        prices: taxesReq.prices,
-    });
-    console.log(report);
-    res.json(report);
-}); */
+router.get('/', (req, res) => {
+    res.status(200).send('Crypto Rates Home Page');
+});
 router.post('/rates', jsonParser, (0, asyncHandler_1.default)(async (req, res, next) => {
-    const response = await (0, getExchangeRates_1.default)(req.body.ratesQuery, req.body.key);
-    (0, queue_1.resetQueue)(req.body.key);
+    res.send('hi');
+    /*         const {ratesQuery, key} = req.body;
+    const response: Array<RateResponse> = await getExchangeRates(
+        req.body.ratesQuery,
+        req.body.key
+    );
+    // resetQueue(req.body.key);
     //console.log(response);
-    res.json(response);
+    res.json(response); */
 }));
 exports.default = router;
