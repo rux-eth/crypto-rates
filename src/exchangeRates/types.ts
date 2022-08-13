@@ -38,3 +38,34 @@ export interface TickerDoc {
         [key: Chain[number]]: ContractAddress;
     };
 }
+
+/**
+ *
+ * Crypto Rates
+ *
+ * Endpoint: https://rux-crypto-rates.herokuapp.com/rates
+ * HTTP Method: POST
+ *
+ * id: number                           can be anything, as long as they dont repeat
+ * timestamp: Array<number>             must be in milliseconds since UNIX epoch
+ * chain: Chain
+ *      Acceptable values:
+ *          - bitcoin
+ *          - ethereum
+ *          - avalanche
+ *          - polygon
+ *          - fantom
+ *          - solana
+ *          - polkadot
+ *          - luna
+ *          - binance
+ * baseCurrency: BaseCurrency           most major currencies supported (USD, GBP, JPY, etc.)
+ * address(OPTIONAL): ContractAddress
+ * symbol(OPTIONAL): string
+ *
+ * For tokens hosted on a chain (like Chainlink on Ethereum), you must provide
+ * either a contract address or symbol (LINK for Chainlink). However, a contract
+ * address is preferable, as the program will try to resolve symbols but it is
+ * not guaranteed and queries could come back empty
+ *
+ */

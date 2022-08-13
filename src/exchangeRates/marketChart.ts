@@ -4,15 +4,13 @@ import { List } from 'immutable';
 import { BasePair, Timestamp, TimestampTuple } from './types';
 import { coinGeckoBaseUrl, iChainMapping } from './util/constants';
 import { hr2ms } from './util/dataHelpers';
-
 const http = rateLimiter(
     axios.create({
         method: 'get',
-        validateStatus: (status) => status === 200 || status === 404,
+        validateStatus: (status) => status === 200,
     }),
-    { maxRequests: 40, perMilliseconds: 60000 }
+    { maxRequests: 20, perMilliseconds: 60000 }
 );
-let counter = 0;
 export async function marketChart(
     pair: BasePair,
     times: List<TimestampTuple>,
@@ -36,7 +34,11 @@ export async function marketChart(
             const url: string = `${baseUrl}&from=${Math.round(start / 1000)}&to=${Math.round(
                 nt / 1000
             )}`;
-            queue.push(http(url));
+            queue.push(
+                http(url)
+                    .then((res) => res)
+                    .catch((err) => ({ data: { prices: [[-1, -1]] } } as any))
+            );
             start = nt;
         }
     }
