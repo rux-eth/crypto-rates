@@ -1,7 +1,7 @@
 # crypto-rates
 Computes exchanges rates using CoinGecko's API. Supports thousands of cryptos and limits API calls and caches rates into MongoDB. Was originally going to be a back-end application that computes Defi taxes but I decided it would be better to be its own application.
 # How to Use
-NOTE: This project was made mainly so i could learn Typescript (and boy did i learn) at a time when i was somewhat new to development in general, so it may be buggy. On top of that, it was made enitrely with free services and doesnt require an API key. Despite that, its pretty fast after rates are cached. If they arent cached yet, you can expect it to take about a second per rate.
+NOTE: this project was made enitrely with free services and doesnt require an API key which makes it slow at times. Despite that, its pretty fast after rates are cached. If they arent cached yet, you can expect it to take about a second per rate.
 
 Also, the precision of the rate to the provided timestamp is within 1 hour and if there is an error getting the rate it will return with a value of -1.
 
