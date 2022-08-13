@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as dotenv from 'dotenv';
 import { List } from 'immutable';
-import { Collection, MongoClient } from 'mongodb';
+import { MongoClient } from 'mongodb';
 import { TickerDoc } from '../src/types';
 import { coinGeckoBaseUrl } from '../src/util/constants';
 dotenv.config();
@@ -38,8 +38,6 @@ describe('Coins', () => {
             (val: TickerDoc, index) =>
                 coins.findIndex((v: TickerDoc) => v.symbol === val.symbol) === index
         );
-        const coll: Collection = (await client).db('exchange-rates').collection('tickers');
-        const mongoRes = await coll.insertMany(coins.toArray());
         await (await client).close();
         // console.log(mongoRes);
     });
