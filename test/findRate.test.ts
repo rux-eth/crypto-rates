@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { List } from 'immutable';
 import { findRate, hr2ms } from '../src/exchangeRates/util/dataHelpers';
 import { Timestamp } from '../src/types';

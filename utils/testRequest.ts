@@ -1,5 +1,5 @@
 const data = [
-    { id: 16, symbol: 'btc', baseCurrency: 'usd', timestamp: [1570746314000] },
+    { id: 16, symbol: 'btc', baseCurrency: 'gbp', timestamp: [1570746314000] },
     { id: 18, symbol: 'btc', baseCurrency: 'usd', timestamp: [1571037194000] },
     { id: 19, symbol: 'btc', baseCurrency: 'usd', timestamp: [1574255876000] },
     { id: 24, symbol: 'btc', baseCurrency: 'usd', timestamp: [1579001159000] },

@@ -56,8 +56,8 @@ export function formatTimestamps(
 }
 export function toBasePair<T extends BasePair>(o: T): BasePair {
     return <BasePair>{
-        chain: o.chain,
-        baseCurrency: o.baseCurrency,
-        address: o.address,
+        chain: o.chain.toLowerCase(),
+        baseCurrency: o.baseCurrency.toLowerCase(),
+        address: o.address?.toLowerCase(),
     };
 }

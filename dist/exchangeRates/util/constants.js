@@ -1,7 +1,10 @@
-import { Map as IMap } from 'immutable';
-export const coinGeckoBaseUrl = 'https://api.coingecko.com/api/v3/';
-export const baseCurrencies = ['usd', 'gbp'] as const;
-export const chainMapping = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.iChainMapping = exports.chainMapping = exports.baseCurrencies = exports.coinGeckoBaseUrl = void 0;
+const immutable_1 = require("immutable");
+exports.coinGeckoBaseUrl = 'https://api.coingecko.com/api/v3/';
+exports.baseCurrencies = ['usd', 'gbp'];
+exports.chainMapping = {
     bitcoin: {
         platform: 'bitcoin',
         coinId: 'bitcoin',
@@ -48,4 +51,4 @@ export const chainMapping = {
         symbol: 'bnb',
     },
 };
-export const iChainMapping = IMap(chainMapping);
+exports.iChainMapping = (0, immutable_1.Map)(exports.chainMapping);

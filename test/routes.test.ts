@@ -1,3 +1,4 @@
+// @ts-nocheck
 import axios, { AxiosResponse } from 'axios';
 import * as fs from 'fs';
 import testRequest from '../utils/testRequest';

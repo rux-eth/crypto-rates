@@ -1,11 +1,10 @@
+// @ts-nocheck
 import axios from 'axios';
 import * as dotenv from 'dotenv';
 import { List } from 'immutable';
-import { MongoClient } from 'mongodb';
 import { TickerDoc } from '../src/types';
 import { coinGeckoBaseUrl } from '../src/util/constants';
 dotenv.config();
-const client = new MongoClient(process.env.MONGODB_URL!).connect();
 describe('Coins', () => {
     it('Coins list', async () => {
         const res = await axios({
@@ -38,7 +37,5 @@ describe('Coins', () => {
             (val: TickerDoc, index) =>
                 coins.findIndex((v: TickerDoc) => v.symbol === val.symbol) === index
         );
-        await (await client).close();
-        // console.log(mongoRes);
     });
 });
